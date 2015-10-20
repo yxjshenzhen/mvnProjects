@@ -1,15 +1,17 @@
-package com.lux.you.SerialPort;
+package com.lux.you.test;
 
 import gnu.io.CommPortIdentifier;
 
 import java.util.Enumeration;
+
+import com.lux.you.SerialPort.CommUtil;
 
 
 public class Test {
 
 	public static void main(String[] args) throws InterruptedException {
 		@SuppressWarnings("rawtypes")
-		Enumeration portList = CommPortIdentifier.getPortIdentifiers(); //得到当前连接上的端口
+		Enumeration portList = CommPortIdentifier.getPortIdentifiers(); //寰楀埌褰撳墠杩炴帴涓婄殑绔彛
 		
 		CommUtil comm3 = new CommUtil(portList,"COM1");
 		

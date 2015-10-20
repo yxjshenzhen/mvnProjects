@@ -15,17 +15,17 @@ import gnu.io.UnsupportedCommOperationException;
 
 public class CommUtil implements SerialPortEventListener {
 
-	InputStream inputStream; // ´Ó´®¿ÚÀ´µÄÊäÈëÁ÷
-	OutputStream outputStream;// Ïò´®¿ÚÊä³öµÄÁ÷
-	SerialPort serialPort; // ´®¿ÚµÄÒıÓÃ
+	InputStream inputStream; // ä»ä¸²å£æ¥çš„è¾“å…¥æµ
+	OutputStream outputStream;// å‘ä¸²å£è¾“å‡ºçš„æµ
+	SerialPort serialPort; // ä¸²å£çš„å¼•ç”¨
 	CommPortIdentifier portId;
 
 	@SuppressWarnings("rawtypes")
 	public CommUtil(Enumeration portList, String name) {
 		while (portList.hasMoreElements()) {
 			CommPortIdentifier temp = (CommPortIdentifier) portList.nextElement();
-			if (temp.getPortType() == CommPortIdentifier.PORT_SERIAL) {// ÅĞ¶ÏÈç¹û¶Ë¿ÚÀàĞÍÊÇ´®¿Ú
-				if (temp.getName().equals(name)) { // ÅĞ¶ÏÈç¹û¶Ë¿ÚÒÑ¾­Æô¶¯¾ÍÁ¬½Ó
+			if (temp.getPortType() == CommPortIdentifier.PORT_SERIAL) {// åˆ¤æ–­å¦‚æœç«¯å£ç±»å‹æ˜¯ä¸²å£
+				if (temp.getName().equals(name)) { // åˆ¤æ–­å¦‚æœç«¯å£å·²ç»å¯åŠ¨å°±è¿æ¥
 					portId = temp;
 				}
 			}
@@ -41,12 +41,12 @@ public class CommUtil implements SerialPortEventListener {
 		} catch (IOException e) {
 		}
 		try {
-			serialPort.addEventListener(this); // ¸øµ±Ç°´®¿ÚÌì¼ÓÒ»¸ö¼àÌıÆ÷
+			serialPort.addEventListener(this); // ç»™å½“å‰ä¸²å£å¤©åŠ ä¸€ä¸ªç›‘å¬å™¨
 		} catch (TooManyListenersException e) {
 		}
-		serialPort.notifyOnDataAvailable(true); // µ±ÓĞÊı¾İÊ±Í¨Öª
+		serialPort.notifyOnDataAvailable(true); // å½“æœ‰æ•°æ®æ—¶é€šçŸ¥
 		try {
-			serialPort.setSerialPortParams(2400, SerialPort.DATABITS_8, // ÉèÖÃ´®¿Ú¶ÁĞ´²ÎÊı
+			serialPort.setSerialPortParams(2400, SerialPort.DATABITS_8, // è®¾ç½®ä¸²å£è¯»å†™å‚æ•°
 					SerialPort.STOPBITS_1, SerialPort.PARITY_NONE);
 		} catch (UnsupportedCommOperationException e) {
 		}
@@ -65,7 +65,7 @@ public class CommUtil implements SerialPortEventListener {
 		case SerialPortEvent.OUTPUT_BUFFER_EMPTY:
 			break;
 		
-		case SerialPortEvent.DATA_AVAILABLE:// µ±ÓĞ¿ÉÓÃÊı¾İÊ±¶ÁÈ¡Êı¾İ,²¢ÇÒ¸ø´®¿Ú·µ»ØÊı¾İ
+		case SerialPortEvent.DATA_AVAILABLE:// å½“æœ‰å¯ç”¨æ•°æ®æ—¶è¯»å–æ•°æ®,å¹¶ä¸”ç»™ä¸²å£è¿”å›æ•°æ®
 			byte[] readBuffer = new byte[20];
 
 			try {

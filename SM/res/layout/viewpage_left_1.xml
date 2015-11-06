@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="387.2px"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="387.2px"
+        android:layout_height="121.095px" >
+        
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/delete" />
+ 
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="387.2px"
+        android:layout_height="958.905px"
+        android:orientation="vertical" >
+        <LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="52.334px" >
+        	
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="35px"
+        	android:orientation="horizontal" >
+        	<ImageView
+            	android:layout_width="35px"
+            	android:layout_height="35px"
+            	android:layout_marginLeft="28.226px"
+            	android:background="@drawable/found" />
+        	<TextView
+                android:id="@+id/foundText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="36.133px"
+                android:textSize="35px"
+                android:text="发现" />
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="38.6px" >
+        	
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="35px"
+        	android:orientation="horizontal" >
+        	<ImageView
+            	android:layout_width="35px"
+            	android:layout_height="35px"
+            	android:layout_marginLeft="28.226px"
+            	android:background="@drawable/shoucangjia" />
+        	<TextView
+                android:id="@+id/shoucangjiaText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="36.133px"
+                android:textSize="35px"
+                android:text="收藏夹" />
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="23.68px" >
+        	
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+        	<TextView
+                android:id="@+id/weatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:text="天气" />
+        	<TextView
+                android:id="@+id/hearthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="健康" />
+        	<TextView
+                android:id="@+id/gupiaoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="股票" />
+        	<TextView
+                android:id="@+id/newsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="新闻" />
+        	<TextView
+                android:id="@+id/musicText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="音乐" />
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="37.929px" >
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="35px"
+        	android:orientation="horizontal" >
+        	<ImageView
+            	android:layout_width="35px"
+            	android:layout_height="35px"
+            	android:layout_marginLeft="28.226px"
+            	android:background="@drawable/installedapp" />
+        	<TextView
+                android:id="@+id/installedappText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="36.133px"
+                android:textSize="35px"
+                android:text="已有应用" />
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="23.68px" >
+        	
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical" >
+        	<TextView
+                android:id="@id/weatherText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:text="天气" />
+        	<TextView
+                android:id="@id/hearthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="健康" />
+        	<TextView
+                android:id="@id/gupiaoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="股票" />
+        	<TextView
+                android:id="@id/newsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="新闻" />
+        	<TextView
+                android:id="@id/musicText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="音乐" />
+        	<TextView
+                android:id="@+id/nativeappText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="99.359px"
+                android:textSize="20px"
+                android:layout_marginTop="9.794px"
+                android:text="本地应用" />
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="32.426px" >
+    	</LinearLayout>
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="47px"
+        	android:orientation="horizontal" >
+        	<ImageView
+            	android:layout_width="102px"
+            	android:layout_height="47px"
+            	android:layout_marginLeft="99.359px"
+            	android:background="@drawable/add" />
+    	</LinearLayout>
+    	
+    	<LinearLayout
+        	android:layout_width="387.2px"
+        	android:layout_height="62.771px"
+        	android:layout_marginTop="170px"
+        	android:orientation="horizontal" >
+        	<ImageView
+            	android:layout_width="62.771px"
+            	android:layout_height="62.771px"
+            	android:layout_marginLeft="28.226px"
+            	android:background="@drawable/user" />
+        	<TextView
+                android:id="@+id/userText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="39px"
+                android:layout_marginTop="11.88px"
+                android:textSize="22px"
+                android:textColor="#D88B25"
+                android:text="MAXIN MAI" />
+    	</LinearLayout>
+    	
+    </LinearLayout>
+</LinearLayout>
